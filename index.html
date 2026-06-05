@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Aldrin B. Santillan - Computer Science Student & Software Developer">
+    <meta name="keywords" content="Aldrin Santillan, Portfolio, Computer Science, Developer, OJT, Philippines">
+    <meta name="author" content="Aldrin B. Santillan">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="https://picsum.photos/seed/favicon/32/32" type="image/png">
+
+    <title>Aldrin B. Santillan | Portfolio</title>
+
+    <!-- Google Fonts: Poppins (Modern & Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h3>Aldrin Santillan</h3>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-code"></i> ABS
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (with 3D Background) -->
+    <header id="hero">
+        <div id="canvas-container"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text reveal">
+                <h3>Hello, I'm</h3>
+                <h1 class="text-gradient">ALDRIN B. SANTILLAN</h1>
+                <div class="typewriter">
+                    I am a <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p>I am a Computer Science student with a passion for software development, database systems, and modern web technologies. I enjoy transforming ideas into functional applications and continuously improving my skills in programming, UI/UX design, and problem-solving. My experience includes developing projects using Java, MySQL, HTML, CSS, and JavaScript. I am dedicated to learning emerging technologies and building innovative solutions that create meaningful user experiences.</p>
+
+                
+
+              
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4 data-target="10">0</h4>
+                        <p>Academic Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 data-target="5">0</h4>
+                        <p>Prog. Languages</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 data-target="8">0</h4>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image reveal">
+                <div class="profile-frame">
+                    <img src="1pro.png" alt="Aldrin Santillan">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>About Me</h2>
+                <span></span>
+            </div>
+
+            <div class="about-card reveal">
+                <div class="about-details">
+                    <div class="about-info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Aldrin B. Santillan</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-flag"></i>
+                            <span>Filipino</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Tandag City, Surigao del Sur</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>absantillan@nemsu.edu.ph</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>09387259233</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>BS Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>OJT Candidate & Developer</h3>
+                    <p>
+                        Motivated and hardworking Computer Science student seeking an On-the-Job Training (OJT) opportunity where I can apply my knowledge in programming, software development, database management, and web technologies while gaining practical experience in a professional environment.
+                    </p>
+                    <p>
+                        My journey involves building academic projects like Banking Systems and Hotel Booking Apps using Java, alongside exploring Data Analysis with Python. I am eager to contribute to a dynamic team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>My Skills</h2>
+                <span></span>
+            </div>
+
+            <div class="skills-grid reveal">
+                <!-- Technical Skills -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Java Programming</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-line"><span data-width="90%"></span></div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-line"><span data-width="75%"></span></div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line"><span data-width="85%"></span></div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML/CSS/JS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line"><span data-width="80%"></span></div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-users"></i> Soft Skills</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Teamwork</span>
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Problem Solving</span>
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Communication</span>
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Time Management</span>
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Adaptability</span>
+                        <span class="badge" style="font-size: 0.9rem; padding: 8px 15px; background: white; border: 1px solid #ddd;">Fast Learner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack reveal">
+                <div class="tech-item"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                <div class="tech-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="tech-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="fa-brands fa-js"></i><span>JS</span></div>
+                <div class="tech-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                <div class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                <div class="tech-item"><i class="fa-solid fa-microchip"></i><span>Arduino</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Education</h2>
+                <span></span>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – Present</div>
+                    <div class="timeline-content">
+                        <h3>North Eastern Mindanao State University</h3>
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p>A higher education institution committed to providing quality education and developing competent, innovative, and socially responsible graduates.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduated: 2023</div>
+                    <div class="timeline-content">
+                        <h3>Lapinigan National Senior High School</h3>
+                        <h4>Senior High School</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduated: 2021</div>
+                    <div class="timeline-content">
+                        <h3>Lapinigan National High School</h3>
+                        <h4>Junior High School</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Academic Projects</h2>
+                <span></span>
+            </div>
+
+            <div class="projects-grid reveal">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="bank.jpg" alt="Banking System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-role">Lead Developer</span>
+                        <h3>Banking System</h3>
+                        <p>A comprehensive banking solution featuring user registration, secure login, and full database management capabilities.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Swing GUI</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="hotel.jpg" alt="Banking System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-role">Lead Developer</span>
+                        <h3>Hotel Booking System</h3>
+                        <p>System for managing room reservations, customer profiles, and booking history with a user-friendly interface.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Swing</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="machine.jpg" alt="Banking System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-role">Data Analyst</span>
+                        <h3>Machine Learning Analysis</h3>
+                        <p>Data cleaning, preprocessing, trend prediction, and visualization using Python libraries.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Pandas</span>
+                            <span class="badge">Matplotlib</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <<img src="app.jpg" alt="Banking System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-role">System Architect</span>
+                        <h3>Fitness Tracker App</h3>
+                        <p>Designed workflow and SDLC planning for an application focused on health monitoring and fitness tracking.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">UML</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <<img src="student.jpg" alt="Banking System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-role">System Architect</span>
+                        <h3>Fitness Tracker App</h3>
+                        <p>Designed workflow and SDLC planning for an application focused on health monitoring and fitness tracking.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">UML</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Certifications</h2>
+                <span></span>
+            </div>
+            <div class="cert-grid reveal">
+                <div class="cert-card">
+                    <i class="fa-solid fa-certificate" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                    <h4>Java Programming</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-light);">Certificate of Completion</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fa-solid fa-certificate" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                    <h4>Web Development</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-light);">Online Course</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fa-solid fa-award" style="font-size: 2rem; color: var(--secondary); margin-bottom: 10px;"></i>
+                    <h4>Academic Excellence</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-light);">NEMSU</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume / CTA -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="download-resume-container reveal">
+                <h2>Interested in working together?</h2>
+                <p style="margin: 15px 0;">Download my full CV to get more details about my experience and education.</p>
+                <a href="Aldrin_Santillan_CV.pdf" class="btn download-btn" download>
+                    <i class="fa-solid fa-file-pdf"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Contact Me</h2>
+                <span></span>
+            </div>
+
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>absantillan@nemsu.edu.ph</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>09387259233</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Tandag City, Surigao del Sur, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="absantillan@g,ail.com" method="POST" enctype="text/plain" class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ABS</div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-icons" style="margin: 0;">
+                    <a href="#" class="social-icon" style="background: rgba(255,255,255,0.1); color: white; border: none;"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon" style="background: rgba(255,255,255,0.1); color: white; border: none;"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Aldrin B. Santillan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Custom Script (loaded last so DOM is ready) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
